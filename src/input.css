@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-next::before, .slick-prev::before{
+    @apply h-14 w-14 border text-black border-gray-400 rounded-full bg-transparent;
+}
+
+.slick-next::before{
+    @apply -ml-10
+}
+
+.slick-prev::before{
+    @apply -mr-10
+}

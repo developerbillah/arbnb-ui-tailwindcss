@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Slick CSS  -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <!-- Fontawesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body class="font-DMSans">
+   <!-- Header  -->
+    <header class="py-4 border-b-[0.1rem]">
+        <!-- Container  -->
+        <div class="container mx-auto">
+            <!-- Desktop Nav  -->
+            <div class="hidden md:block">
+                <nav class="flex justify-between items-center">
+                    <!-- Logo  -->
+                    <div class="logo w-36">
+                        <img src="./assets/img/airbnb.svg" alt="" class="w-full">
+                    </div>
+    
+                    <!-- Searchbar  -->
+                    <div class="shadow-md border-gray-100 border-[0.1rem] rounded-full px-3 py-2">
+                        <button class="border-r-[0.1rem] border-gray px-3 mt-2 font-bold">Anywhere</button>
+                        <button class="border-r-[0.1rem] border-gray px-3 mt-2 font-bold">Any week</button>
+                        <button class="px-3 mt-2 font-thin text-gray-400">Add guests</button>
+                        <button class="bg-primary px-2 py-1 rounded-full bg-primaryRed">
+                            <span class="text-white">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </button>
+                    </div>
+    
+                    <!-- User Menu  -->
+                    <div class="button-group flex items-center justify-between">
+                        <button class="font-bold hover:bg-gray-200 px-4 py-3 rounded-full">Become Host</button>
+                        <button class="font-bold hover:bg-gray-200 px-4 py-3 rounded-full">
+                            <span>
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                        </button>
+                        <button class="flex items-center border border-gray-200 hover:shadow-md px-3 py-1 rounded-full space-x-3 ml-2">
+                            <span>
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            <span class="text-3xl text-gray-500">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <!-- Desktop Nav End  -->
+
+            <!-- Mobile Nav  -->
+            <div class="md:hidden block">
+                <nav class="flex items justify-between shadow-md border border-gray-200 sm:block mx-6 px-3 py-2 rounded-full">
+                    <!-- Search  -->
+                    <button class="w-8">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </button>
+                    <div class="flex flex-col">
+                        <h3 class="font-semibold">Where to?</h3>
+                        <div class="flex justify-between space-x-2">
+                            <p class="text-sm font-thin text-gray-500">Where...</p>
+                            <p class="text-sm font-thin text-gray-500">Any we...</p>
+                            <p class="text-sm font-thin text-gray-500">Add gues..</p>
+                        </div>
+                    </div>
+                    <button class="shadow-sm border-[0.1rem] border-gray-300 px-3 py-2 rounded-full">
+                        <span>
+                            <i class="fa-solid fa-sliders"></i>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+            <!-- Mobile Nav End  -->
+        </div>
+    </header>
+   <!-- Header End  -->
+
+   <!-- Category -->
+    <section class="py-4">
+        <!-- Container  -->
+        <div class="container mx-auto flex justify-between items-center">
+             <!-- Category -->
+             <div class="categories w-11/12">
+                <a href="" class="single_cat text-center font-semibold">
+                    <div class="py-4 text-center">
+                        <img src="./assets/img/omg.jpg" alt="" class="w-8 mx-auto">
+                        <p class="text-xs">OMG</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/national_park.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">National Parks</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/amazing_pools.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Amazing Pools</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/tiny_homes.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Tiny Homes</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/designs.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Design</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/islands.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Islands</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/artic.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Artic</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/national_park.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">National Parks</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/cabins.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Cabins</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/beach.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Beach</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/lakefront.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Lakefront</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/surfing.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Surfing</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/bed&breakfast.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Bed & Breakfast</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/caves.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Caves</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/campers.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Campers</p>
+                    </div>
+                </a>
+
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/sharedhomes.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Shared homes</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/earth_homes.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Earth homes</p>
+                    </div>
+                </a>
+
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/country_sides.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Countryside</p>
+                    </div>
+                </a>
+
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/luxe.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Luxe</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/golfing.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Golfing</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/aframes.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">A-Frames</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/castles.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Castels</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/amazing_views.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Amazing views</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/mansions.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Mansions</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/farms.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Farms</p>
+                    </div>
+                </a>
+
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/historical_homes.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Historical homes</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/windmills.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Windmills</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/skiing.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Skiing</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/cycladic_home.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Cycladic homes</p>
+                    </div>
+                </a>
+                
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/beach_front.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Beachfront</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/iconic_cities.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Iconic cities</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/chep_kitchen.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Chef's kitchens</p>
+                    </div>
+                </a>
+
+                <a href="" class="single_cat text-center text-gray-500 font-semibold">
+                    <div class="py-4">
+                        <img src="./assets/img/camping.jpg" alt="" class="w-8 mx-auto opacity-75">
+                        <p class="text-xs">Treehouses</p>
+                    </div>
+                </a>
+                
+
+              </div>
+
+              <div class="w-1/12 ml-5">
+                <button class="hidden shadow-sm border-[0.1rem] w-20 h-10 rounded-lg md:block">
+                    <span><i class="fa-solid fa-sliders"></i></span>
+                    <span class="font-semibold">Filter</span>
+                  </button>
+              </div>
+        </div>
+    </section>
+   <!-- Category End  -->
+
+   <!-- Hourse Details  -->
+
+   <!-- House Details End  -->
+
+   <!-- jQuery  -->
+   <script src="./assets/js/jquery-3.6.1.min.js"></script>
+   <script src="./assets/js/slick.min.js"></script>
+
+   <script>
+    $('.categories').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 10,
+        slidesToScroll: 8,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '5px',
+                slidesToShow: 6
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '5px',
+                slidesToShow: 4,
+            }
+            }
+        ]
+    });
+   </script>
+</body>
+</html>
