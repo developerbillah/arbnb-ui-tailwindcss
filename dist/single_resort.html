@@ -68,7 +68,7 @@
                 <nav class="flex items justify-between mx-5">
                    <button><i class="fa-solid fa-angle-left"></i> Homes</button>
 
-                   <div class="space-x-3">
+                   <div class="space-x-3 mr-5">
                         <button><i class="fa-solid fa-arrow-up-from-bracket"></i></button>
                         <button><i class="fa-regular fa-heart"></i></button>
                    </div>
@@ -290,6 +290,88 @@
     </section>
    <!-- Main Content End  -->
 
+   <!-- Main Content for Mobile View  -->
+    <section class="resort_content">
+        <div class="resortMobile_gallery relative">
+            <div class="thumb">
+                <img src="./assets/img/101.jpg" alt="" class="thumb_img">
+                <img src="./assets/img/102.jpg" alt="" class="thumb_img">
+                <img src="./assets/img/105.jpg" alt="" class="thumb_img">
+            </div>
+            <div class="wishlist">
+                <a href=""><i class="fa-regular fa-heart"></i></a>
+            </div>
+        </div>
+        <div class="mx-3 border-b-[0.1rem]">
+            <h2 class="text-2xl font-bold text-gray-700 hover:text-gray-900 transition leading-7">
+                Baanchandra Jungle Tiny Barn House .
+            </h2>
+            <div class="flex flex-col items-start mt-3 gap-x-10 mb-10">
+                <button class="text-sm font-semibold underline text-gray-600 hover:text-gray-400">2 reviews</button>
+                <button class="text-sm mt-1 font-semibold underline text-gray-600 hover:text-gray-400 text-left">Tambon Ban Waen, Chang Wat Chiang Mai, Thailand</button>
+            </div>
+        </div>
+
+         <!-- Content Section -->
+         <div class="features mx-3">
+            <!-- Item 01  -->
+            <div class="items flex my-8">
+                <div class="icon w-10 text-2xl mt-1">
+                    <i class="fa-solid fa-bath"></i>
+                </div>
+                <div class="item_details ml-4">
+                    <h4 class="text-xl font-semibold">Dedicated workspace</h4>
+                    <p class="text-gray-500">A private room with wifi that’s well-suited for working.</p>
+                </div>
+            </div>
+            
+            <!-- Item 02  -->
+            <div class="items flex my-8">
+                <div class="icon w-10 text-2xl mt-1">
+                    <i class="fa-solid fa-toilet-portable"></i>
+                </div>
+                <div class="item_details">
+                    <h4 class="text-xl font-semibold">Self check-in</h4>
+                    <p class="text-gray-500">Check yourself in with the lockbox.</p>
+                </div>
+            </div>
+
+            <!-- Item 03 -->
+            <div class="items flex my-8">
+                <div class="icon w-10 text-2xl mt-1">
+                    <i class="fa-solid fa-calendar-week"></i>
+                </div>
+                <div class="item_details">
+                    <h4 class="text-xl font-semibold">Self check-in</h4>
+                    <p class="text-gray-500">Check yourself in with the lockbox.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Features Description 01 -->
+        <div class="border-t-2 py-10 mx-3">
+            <img src="./assets/img/single_thumb/16.png" alt="" class="w-40">
+            <div class="fe_des mt-5">
+                <p class="text-lg">Every booking includes free protection from Host cancellations, listing inaccuracies, and other issues like trouble checking in.</p>
+            </div>
+        </div>
+
+        <!-- Features Description 02 -->
+        <div class="border-t-2 py-6 mx-3 mb-20">
+            <div class="fe_des mt-5">
+                <p class="text-lg">"Barn" of the Lanna Thai people is a building for storing paddy rice. Barn House is also an indication of the owner's status. I have collected old wooden houses and barn components. That has been demolished into wood chips Rebuilt into a "Old Barn House" house with 98 square meters of living space. 1 bedrooms, 1 bathrooms, 1 kitchen can accommodate up to 2 people during the holidays and can listen to past stories through this house with A couple Please relax and be happy.</p>
+            </div>
+        </div>
+
+        <div class="moble_reservation bg-white flex justify-between px-5 border-t-[0.1rem] py-2 fixed w-full bottom-0 overflow-hidden ">
+            <div class="flex justify-between items-end">
+                <h4><span class="font-semibold text-2xl">$61</span> night</h4>
+            </div>
+
+            <button class="px-4 rounded-md text-white bg-primaryRed mr-5">Reserve</button>
+        </div>
+    </section>
+   <!-- Main Content for Mobile View End  -->
+
    <!-- Footer  -->
     <footer class="main_footer">
         <div class="container mx-auto flex justify-between">
@@ -316,33 +398,21 @@
         </div>
     </footer>
 
-    <footer class="moble_footer">
-        <a href="" class="flex flex-col items-center">
-            <span class="font-semibold text-2xl text-primaryRed">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <span class="font-semibold text-xs">Explore</span>
-        </a>
-
-        <a href="" class="flex flex-col items-center text-gray-500">
-            <span class="font-semibold text-2xl">
-                <i class="fa-regular fa-heart"></i>
-            </span>
-            <span class="font-semibold text-xs">Wishlist</span>
-        </a>
-
-        <a href="" class="flex flex-col items-center text-gray-500">
-            <span class="font-semibold text-2xl">
-                <i class="fa-regular fa-circle-user"></i>
-            </span>
-            <span class="font-semibold text-xs">Login</span>
-        </a>
-    </footer>
    <!-- Footer End  -->
 
    <!-- jQuery  -->
    <script src="./assets/js/jquery-3.6.1.min.js"></script>
    <script src="./assets/js/slick.min.js"></script>
+
+   <script>
+    $('.thumb').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+   </script>
 
 </body>
 </html>
