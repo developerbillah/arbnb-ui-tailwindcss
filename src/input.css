@@ -8,10 +8,34 @@
     @apply h-14 w-14 border text-black border-gray-400 rounded-full bg-transparent;
 }
 
-.slick-next::before{
-    @apply -ml-10
+button.slick-next::before{
+    @apply -ml-16
 }
 
-.slick-prev::before{
-    @apply -mr-10
+button.slick-prev,button.slick-prev::before{
+    @apply -mr-16 z-10
+}
+
+.single_cat{
+    @apply  text-center text-gray-500 font-semibold hover:border-b-4 hover:border-gray-900 hover:text-gray-900 transition;
+}
+
+.cat_text{
+    @apply text-xs md:text-sm;
+}
+
+.thumb_img{
+    @apply rounded-md lg:h-60 md:h-48 sm:h-36;
+}
+
+.home_lists{
+    @apply grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3;
+}
+
+.wishlist{
+    @apply absolute top-4 right-5 text-white text-2xl;
+}
+
+.single_home{
+    @apply mx-3 my-4;
 }
