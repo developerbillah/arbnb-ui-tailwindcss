@@ -39,3 +39,12 @@ button.slick-prev,button.slick-prev::before{
 .single_home{
     @apply mx-3 my-4;
 }
+
+.main_footer{
+    @apply hidden border-t-[0.1rem] py-3 fixed bottom-0 overflow-hidden w-full bg-white z-50 md:block;
+}
+
+.moble_footer{
+    @apply flex gap-x-8 items-center justify-center border-t-[0.1rem] py-3 fixed bottom-0 overflow-hidden w-full bg-white z-50 md:hidden;
+}
+
