@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.search_container{
+    @apply shadow-md border-gray-100 border-[0.1rem] rounded-full px-3 py-2;
+}
+
+.user_menuBtn{
+    @apply font-bold hover:bg-gray-200 px-4 py-3 rounded-full;
+}
+
 .slick-next::before, .slick-prev::before{
     @apply h-14 w-14 border text-black border-gray-400 rounded-full bg-transparent;
 }
@@ -14,6 +23,10 @@ button.slick-next::before{
 
 button.slick-prev,button.slick-prev::before{
     @apply -mr-16 z-10
+}
+
+.cat_secContainer{
+    @apply w-full  border-t-[0.1rem] py-1 fixed top-24 z-40 bg-white scroll-smooth md:shadow-md;
 }
 
 .single_cat{
